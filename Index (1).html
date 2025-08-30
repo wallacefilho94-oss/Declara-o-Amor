@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Para Sablina Sousa — Declaração de Amor</title>
+  <style>
+    body{
+      margin:0; font-family: Arial, sans-serif;
+      background: linear-gradient(135deg,#ffdde1,#ee9ca7);
+      color:#333; text-align:center; overflow-x:hidden;
+    }
+    header{
+      padding:40px 20px;
+    }
+    h1{font-size:2.5rem; color:#6a1b9a;}
+    p{max-width:800px; margin:20px auto; line-height:1.8; font-size:1.1rem;}
+    .foto{
+      margin:30px auto;
+    }
+    .foto img{
+      width:300px; height:300px; object-fit:cover;
+      border-radius:20px; box-shadow:0 8px 20px rgba(0,0,0,0.3);
+    }
+    /* brilhos românticos */
+    .brilho{
+      position: fixed;
+      width:6px; height:6px;
+      background:white;
+      border-radius:50%;
+      opacity:0.7;
+      animation: cair 10s linear infinite;
+    }
+    @keyframes cair{
+      from{transform: translateY(-10vh);}
+      to{transform: translateY(110vh);}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Minha eterna declaração para você 💖</h1>
+  </header>
+
+  <div class="foto">
+    <img src="foto1.jpg" alt="Foto da Sablina">
+  </div>
+
+  <main>
+    <p>
+      Sablina, meu amor, cada instante ao seu lado é um presente raro que a vida me deu. 
+      Você não é apenas a razão do meu sorriso, mas também a força que me move nos dias difíceis. 
+      Sua bondade ilumina quem tem o privilégio de estar perto de você, e sua presença é como uma estrela que guia e aquece. ✨
+    </p>
+    <p>
+      Quero que saiba o quanto você é importante não só para mim, mas para todos que têm o prazer de conviver contigo. 
+      Seu coração é puro, sua essência transforma vidas e seu olhar transmite paz. 🌹
+    </p>
+    <p>
+      Obrigado por ser essa mulher incrível, doce e especial. 
+      Que nossa história seja eterna, repleta de amor, cumplicidade e momentos inesquecíveis. 
+      Eu te amo hoje e sempre. 💕
+    </p>
+  </main>
+
+  <footer>
+    Feito com todo o amor por Walace 💌
+  </footer>
+
+  <script>
+    // gerar brilhos românticos discretos
+    for(let i=0;i<25;i++){
+      let b=document.createElement("div");
+      b.className="brilho";
+      b.style.left=Math.random()*100+"vw";
+      b.style.animationDuration=(5+Math.random()*10)+"s";
+      document.body.appendChild(b);
+    }
+  </script>
+</body>
+</html>
